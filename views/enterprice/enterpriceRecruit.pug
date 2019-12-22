@@ -1,0 +1,33 @@
+table
+    tbody 
+        tr
+            td 标题:
+            td
+                input(type="text",placeholder="标题").recruititle 
+        tr
+            td 职位描述:
+            td
+                textarea(class='describes',placeholder="职位描述")
+        tr
+            td 工作职责:
+            td
+                textarea(class='works',placeholder="工作职责")
+        tr
+            td 任职资格:
+            td
+                textarea(class='worksqualify',placeholder="任职资格")
+        tr
+            td 公司介绍:
+            td
+                textarea(class='enterpriceSim',placeholder="公司介绍")
+        tr
+            td 学历要求:
+            td
+                input(class="text",placeholder="学历要求").schoolqualify 
+        tr
+            td 薪资要求:
+            td
+                input(type="text",placeholder="薪资要求").salary 
+        tr
+            td(colspan='2') 
+                input(type="submit",value='提交',class='recruitSub')

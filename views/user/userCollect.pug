@@ -1,0 +1,9 @@
+table
+  tbody
+    each val in dataArr
+      tr
+        td 
+          a(href='/user/showenterpriceDetail?name='+val.enterpricename+'&&keyWord='+val.recruititle) 公司: #{val.enterpricename}
+        td 标题: #{val.recruititle}
+        td 
+          a(href="javascript:;",pid=val.pid) 删除

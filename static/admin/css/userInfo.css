@@ -1,0 +1,174 @@
+body {
+  background: #f6f6f8;
+}
+.content {
+  width: 1203px;
+  margin: 20px auto;
+  background: #fff;
+}
+.content > ul {
+  background: #f6f6f8;
+  float: left;
+}
+.content > ul > li {
+  width: 222px;
+  height: 90px;
+  border-right: 2px solid #eef0f5;
+  font: 18px / 90px '微软雅黑';
+  text-align: center;
+  color: #9ca1ad;
+}
+.content > ul > li a {
+  color: #9ca1ad;
+}
+.pel {
+  width: 80px;
+  height: 1000px;
+  float: left;
+}
+.pel > section:nth-of-type(1) table {
+  margin-top: 50px;
+  width: 980px;
+}
+.pel > section:nth-of-type(1) .showEnterDetail:hover,
+.pel > section:nth-of-type(1) .showAdInfoDetail:hover,
+.pel > section:nth-of-type(1) .showUserDetail:hover {
+  cursor: pointer;
+}
+.pel > section:nth-of-type(1) table.adManage tr:nth-of-type(1) p {
+  width: 150px;
+}
+.pel > section:nth-of-type(1) table.adManage td:nth-of-type(2) p {
+  width: 400px;
+}
+.pel > section:nth-of-type(1) td {
+  vertical-align: top;
+}
+.pel > section:nth-of-type(1) tr td:nth-of-type(1),
+.pel > section:nth-of-type(1) p {
+  color: #495060;
+  font: 13px / 50px '微软雅黑';
+  padding-left: 82px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 235px;
+}
+.pel > section:nth-of-type(1) tr input {
+  width: 300px;
+  height: 34px;
+  border: 1px solid #e3e7ed;
+  padding-left: 10px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  color: #495060 ;
+}
+.pel > section:nth-of-type(1) tr input::-webkit-input-placeholder {
+  color: #9ca1ad;
+  font: 12px / 32px '微软雅黑';
+}
+.pel > section:nth-of-type(1) tr textarea {
+  width: 300px;
+  height: 156px;
+  border: 1px solid #e3e7ed;
+  background: transparent;
+  padding-left: 10px;
+  font: 13px / 30px '微软雅黑';
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  color: #495060;
+}
+.pel > section:nth-of-type(1) tr textarea::-webkit-input-placeholder {
+  color: #9ca1ad;
+  font: 12px / 30px '微软雅黑';
+}
+.pel > section:nth-of-type(1) tr input[type=submit] {
+  color: #fff;
+  background: #55cbc4;
+  margin-top: 100px;
+  position: relative;
+  left: 110px;
+}
+.pel > section:nth-of-type(1) tr input[type=submit]:hover {
+  cursor: pointer;
+}
+.pel > section:nth-of-type(1) tr td:nth-of-type(2) {
+  font: 13px / 50px '微软雅黑';
+  color: #495060;
+  vertical-align: middle;
+}
+.pel > section:nth-of-type(1) tr td:nth-of-type(2) > input,
+.pel > section:nth-of-type(1) tr td:nth-of-type(2) textarea {
+  margin-top: 10px;
+}
+.pel > section:nth-of-type(1) tr td:nth-of-type(2) p {
+  padding-left: 0;
+}
+.pel > section:nth-of-type(1) tr td:nth-of-type(3) a {
+  font: 13px / 50px '微软雅黑';
+  color: #495060;
+  margin-left: 90px;
+  color: #ff552e;
+}
+.pel > section:nth-of-type(1) tr td:nth-of-type(3) a p {
+  padding-left: 0;
+}
+.pel > section:nth-of-type(1) tr:last-child {
+  margin-top: 20px;
+}
+.pel > section:nth-of-type(1) tr:last-child span {
+  font: 13px / 50px '微软雅黑';
+  color: #495060;
+}
+.pel > section:nth-of-type(1) tr:last-child span:hover {
+  cursor: pointer;
+}
+.submit a {
+  color: #fff;
+  width: 130px;
+  height: 34px;
+  text-align: center;
+  font: 12px / 34px '微软雅黑';
+  background: #55cbc4;
+  display: block;
+}
+.userEmailStyle {
+  width: 800px;
+}
+.userEmailStyle li {
+  border-bottom: 5px solid #f6f6f8;
+}
+.userEmailStyle li:hover {
+  cursor: pointer;
+}
+.userEmailStyle li:hover > p {
+  color: #55cbc4;
+}
+.userEmailStyle p {
+  width: 500px !important;
+  overflow: hidden;
+  height: 50px;
+}
+.userEmailStyle p > span {
+  margin-left: 100px;
+}
+table.userManage,
+.enteManage,
+.adPulish,
+.adManage {
+  display: none;
+}
+.yes {
+  z-index: 4;
+  width: 100px;
+  height: 100px;
+  position: fixed;
+  left: 50%;
+  top: 35%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  background: rgba(0, 0, 0, 0.2);
+  font: 18px / 100px '微软雅黑';
+  color: #fff;
+  text-align: center;
+  display: none;
+}

@@ -1,0 +1,83 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='UTF-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    meta(http-equiv='X-UA-Compatible', content='ie=edge')
+    title 广告
+    link(href='css/header.css', rel='stylesheet')
+    link(href='css/page.css', rel='stylesheet')
+    link(href='css/info.css', rel='stylesheet')
+    link(href='css/reset.css', rel='stylesheet')
+    link(href='css/advertDetail.css', rel='stylesheet')
+  body
+    // 顶部
+    header.topHeader
+      h3.logoImg IT招聘
+      ul.listHeader
+        li
+          a(href='/user/index') 首页
+        li
+          a(href='/user/showEnterPoster') 职位
+        li
+          a(href='/user/showPoster') 公司
+        li
+          a(href='/user/showAdvert') 资讯
+      ul.listHeaderSpec
+        li
+          a(href='/user/showLogin') 我要找工作
+        li
+          a(href='/user/showLogin') 我要招聘
+      a.register(href='/user/showLogon') 注册
+      a.login(href='/user/showLogin') 登录
+      p.userName
+        | 欢迎! 
+        span.userNameSpec
+      ul.userPower
+        li
+          a(href='/user/showuserInfo') 个人中心
+           span 编辑在线简历
+        li
+          a(href='/user/index' class="exitSpec") 退出登录
+    // 导航部分
+    nav.navi
+      h3 IT新闻招聘和数据实时跟踪
+      h4
+        a(href='javascript:;') 媒体合作
+    // 广告部分
+    section.advertContent
+      each val in dataVal
+        div
+          h5
+            a(href='javascript:;') #{val.adTitle}
+          p #{val.adSource}·#{val.adtime}  
+          p
+            | #{val.adContent}
+    // 其他信息
+    nav.otherInfo
+      dl
+        dt 企业服务
+        dd
+          a(href='/user/showEnterPoster') 职位搜索
+        dd
+          a(href='/user/showAdvert') 新闻资讯
+      dl
+        dt 使用与帮助
+        dd 用户协议与隐私政策
+        dd 防骗指南
+        dd 使用帮助
+      dl
+        dt 联系IT招聘
+        dd 厦门**网络技术有限公司
+        dd 公司地址:厦门市************
+        dd
+          | 联系电话：
+          tel 123-1234567
+        dd 违法和不良信息举报:123456789@123.com
+      dl
+        dt IT招聘
+        dd 企业服务热线和举报投诉 123 123 1234
+        dd 工作日 8:00 - 22:00
+        dd 休息日 9:30 - 18:30
+  script(src='js/login.js')
+  script(src='js/selectUser.js')

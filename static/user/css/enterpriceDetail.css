@@ -1,0 +1,119 @@
+body {
+  background: #f6f6f8;
+}
+.navi {
+  width: 1203px;
+  height: 212px;
+  margin: 0 auto;
+  background: url(../img/enterpriceBg.jpg);
+  box-sizing: border-box;
+  padding-top: 18px;
+  padding-right: 260px;
+  box-shadow: -600px 0 0 #424a61, 600px 0 0 #424a61;
+}
+.naviList {
+  margin-left: 35px;
+  float: left;
+}
+.naviList li:nth-of-type(1) {
+  font: 13px / 33px '微软雅黑';
+  color: #c3c6cd;
+}
+.naviList > li:nth-of-type(2) {
+  font: 24px / 56px '微软雅黑';
+  color: #fff;
+  font-weight: bolder;
+}
+.naviList > li:nth-of-type(2) > span {
+  color: #fa6a43;
+  margin-left: 20px;
+}
+.naviList > li:nth-of-type(3) {
+  font: 12px / 30px '微软雅黑';
+  color: #c3c0b0;
+}
+.naviList > li:nth-of-type(3) > span {
+  margin-left: 15px;
+}
+.naviList > li:nth-of-type(3) > span:nth-of-type(1) {
+  margin-left: 0px;
+}
+.naviList > li:nth-of-type(4) > span {
+  float: left;
+  font: 12px / 25px '微软雅黑';
+  color: #55cbc4;
+  border: 1px solid #55cbc4;
+  border-radius: 10px;
+  height: 25px;
+  width: 80px;
+  margin-top: 16px;
+  text-align: center;
+  margin-right: 10px;
+}
+.naviList2 {
+  float: right;
+  margin-right: 100px;
+}
+.naviList2 > li:nth-of-type(1) {
+  position: relative;
+  height: 45px;
+  margin-top: 30px;
+}
+.naviList2 > li:nth-of-type(1) > a {
+  width: 296px;
+  height: 45px;
+  background: #55cbc4;
+  color: #fff;
+  text-align: center;
+  font: 16px / 45px '微软雅黑';
+  position: absolute;
+}
+.naviList2 > li:nth-of-type(2) {
+  margin-top: 25px;
+  position: relative;
+}
+.naviList2 > li:nth-of-type(2) a {
+  width: 100px;
+  height: 54px;
+  font: 16px / 54px '微软雅黑';
+  color: #fa6a43;
+  position: absolute;
+}
+.detailContent {
+  width: 1203px;
+  margin: 0 auto;
+}
+.detailList {
+  margin-left: 35px;
+  padding: 34px 0 0 0;
+}
+.detailList > li:nth-of-type(1) {
+  font: 18px / 28px '微软雅黑';
+  color: #424a5e;
+}
+.detailList > li:nth-of-type(2) {
+  font: 14px / 24px '微软雅黑';
+  color: #c6abaf;
+}
+.detailList > li:nth-of-type(2) > span:nth-of-type(2) {
+  margin-left: 22px;
+}
+.detailList > li:nth-of-type(3) dt,
+.detailList > li:nth-of-type(4) dt,
+.detailList > li:nth-of-type(5) dt,
+.detailList > li:nth-of-type(6) dt {
+  font: 13px / 69px '微软雅黑';
+  color: #424a5e;
+}
+.detailList > li:nth-of-type(3) dd,
+.detailList > li:nth-of-type(4) dd,
+.detailList > li:nth-of-type(5) dd,
+.detailList > li:nth-of-type(6) dd {
+  font: 12px / 37px '微软雅黑';
+  color: #61687c;
+  text-indent: 24px;
+}
+.setCollect > span {
+  font-size: 15px;
+  padding-left: 10px;
+}

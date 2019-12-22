@@ -1,0 +1,111 @@
+@import "element";
+.navi{
+    width: 1203px;
+    height: 40px;
+    margin: 0 auto;
+    background: #ffffff;
+    box-shadow: -600px 0 0 #fff, 600px 0 0 #fff;;
+}
+.listHeader{
+    >li:nth-of-type(2){
+        >a{
+            color: #00d7bc;
+        }
+    }
+}
+.naviLIst{
+    .font(12px,40px);
+    color: @fontC;
+    position: relative;
+    >li{
+        position: relative;
+        float: left;
+        padding-left: 30px;
+        width: 90px;
+        dl{
+            width: 200px;
+            .font(13px,53px);
+            position: absolute;
+            background: #fff;
+            display: none;
+            border: 1px solid #e3e7ed;
+            >dd a{
+                color: #8d92a1;
+                padding-left: 20px;
+                box-sizing: border-box;
+            }
+            >dd a:hover{
+                color: @color;
+            }
+        }
+    }
+    >li:hover{
+        cursor: pointer;
+    }
+}
+.posterContent{
+    margin-top: 30px;
+    width: 1203px;
+    height: 445px;
+    margin: 0 auto;
+    margin-top: 30px;
+    margin-bottom: 27px;
+    .font(15px,50px);
+    color: #585858;
+    >div{
+        width:100%;
+        height: 88px;
+        padding: 20px 30px;
+        box-sizing: border-box;
+        background: #fff;
+        border-bottom: 1px solid #f2f2f5;
+        >dl:nth-of-type(1){
+            width: 300px;
+        }
+    }
+}
+// 公司介绍内容
+.posterCTN{
+    >dl{
+        float: left;
+        dt a{
+            color: #8d92a1;
+        }
+    }
+    >dl:nth-of-type(1),>dl:nth-of-type(2){
+        float: left;
+        .font(15px, 27px);
+        color: @fontD;
+        >dt:nth-of-type(1){
+            >span:nth-of-type(1){
+                color: @color;
+            }
+            >span:nth-of-type(2){
+                color: #fc863e;
+                margin-left: 12px;
+            }
+        }
+        >dd{
+            .font(12px, 23px);
+            >span:nth-of-type(2),>span:nth-of-type(3){
+                margin-left: 12px;
+            }
+        }
+    }
+    >dl:nth-of-type(1){
+        width: 200px;
+    }
+    >dl:nth-of-type(2){
+        margin-left: 180px;
+        >dt:nth-of-type(1){
+            >span:nth-of-type(1){
+                color: @fontD;
+            }
+        }
+    }
+    >p{
+        .font(12px, 38px);
+        color: #4a4160;
+        float: right;
+    }
+}

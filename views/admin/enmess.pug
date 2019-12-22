@@ -1,0 +1,8 @@
+table
+    tbody
+        each dataval in dataArr
+            tr
+                td(pid=dataval.id).showEnterDetail 用户名: #{dataval.enname}
+                td 企业: #{dataval.enterpricename}
+                td 
+                    a(href="javascript:;") 删除

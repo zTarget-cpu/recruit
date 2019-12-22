@@ -1,0 +1,24 @@
+@import "element";
+.enterpriceDL{
+    dt{
+        .font(19px, 71px);
+        >a{
+            box-sizing: border-box;
+            color: @fontC;
+        }
+    }
+    dd:nth-of-type(1){
+        .font(12px, 12px);
+        color: @fontD;
+        padding-bottom: 30px;
+        box-sizing: border-box;
+        border-bottom: 1px solid #e3e7ed;
+    }
+    dd:nth-of-type(2){
+        .font(12px,40px);
+        color: @fontD;
+        >span:nth-of-type(2){
+            float: right;
+        }
+    }
+}

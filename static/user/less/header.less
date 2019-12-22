@@ -1,0 +1,128 @@
+@import "element";
+// #202329   #00d7bc
+body{
+    width: 100vw;
+    overflow-x: hidden;;
+}
+
+.topHeader{
+    width: 1203px;
+    height: 49px;
+    margin: 0 auto;
+    position: relative;
+    background: #202329;
+    box-shadow: -600px 0 0 #202329, 600px 0 0 #202329;
+}
+.logoImg{
+    width: 133px;
+    height: 49px;
+    .font(20px,49px);
+    color: #5dd5c8;
+    text-align: center;
+    cursor: pointer;
+}
+
+.listHeader{
+    width: 208px;
+    height: 49px;
+    .font(14px,49px);
+    position: absolute;
+    left: 133px;
+    top: 0px;
+    >li{
+        width: 25%;
+        height: 49px;
+        float: left;
+        >a{
+            color: #fff;
+        }
+        >a:hover{
+            color: #00d7bc;
+        }
+    }
+}
+.listHeaderSpec{
+    width: 162px;
+    height: 9px;
+    .font(12px,49px);
+    position: absolute;
+    left: 854px;
+    top: 0px;
+    >li:nth-of-type(1){
+        >a{
+            color: #00d7bc;
+        }
+    }
+    >li{
+        width: 50%;
+        height: 49px;
+        float: left;
+        >a{
+            color: #fff;
+        }
+        >a:hover{
+            color: #00d7bc;
+        }
+    }
+}
+.register,.login{
+    color: #fff;
+    position: absolute;
+    left: 1010px;
+    padding-left: 11px;
+    padding-right: 11px;
+    top: 12px;
+    border: 1px solid #00d7bc;
+    box-sizing: border-box;
+    text-align: center;
+    .font(12px, 25px);
+    border-radius: 10px;
+}
+.userName{
+    color: #fff;
+    position: absolute;
+    left: 1010px;
+    padding-left: 11px;
+    padding-right: 11px;
+    top: 0px;
+    text-align: center;
+    .font(16px, 49px);
+    display: none;
+}
+.login{
+    left: 1084px;
+}
+.userPower{
+    display: none;
+    width: 257px;
+    margin-left:1014px;
+    >li{
+        width: 257px;
+        height: 50px;;
+        position: relative;
+        a{
+            .font(13px,37px);
+            color: #565e71;
+            position: absolute;
+            width: 125px;
+            height: 50px;
+            text-align: center;
+            left: 0;
+            z-index: 1;
+            background: #fff;
+            span{
+                color: #9fa3b0;
+                position: absolute;
+                left: 36px;
+                top: 30px;
+                .font(13px,13px);;
+            }
+        }
+    }
+    >li:hover{
+        a{
+            background: #f6f6f8;
+            color: #5dd5c8;
+        }
+    }
+}

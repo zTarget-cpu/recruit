@@ -1,0 +1,12 @@
+table
+  tbody
+    each val in dataArr
+      tr
+        td 
+          a(href='javascript:;',initId=val.id) 公司: #{val.enname}
+        td 
+          p 
+            span(style='margin-right:10px') 标题:#{val.recruittile}
+            | 内容: #{val.content.substr(0,10)+'...'}
+        td 
+          a(href="javascript:;",pid=val.pid) 删除

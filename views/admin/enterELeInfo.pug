@@ -1,0 +1,31 @@
+tbody
+    tr
+        td 账号:
+        td
+            p.user #{dataArr[0].enname}
+    tr
+        td 公司:
+        td
+            p.enterprice #{dataArr[0].enterpricename}
+    -if(dataArr[0].enterstatus==1)
+        tr
+            td 老板:
+            td
+                p.boos #{dataArr[0].boos}
+        tr
+            td 地址:
+            td
+                p.address #{dataArr[0].address}
+        tr
+            td 福利:
+            td
+                p.enwelfare #{dataArr[0].enwelfare}
+        tr
+            td 规模:
+            td
+                p.enterpriceSize #{dataArr[0].enterpriceSize}
+    tr
+        td
+        td
+        td
+            a(href='javascript:;') 返回

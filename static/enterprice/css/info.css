@@ -1,0 +1,46 @@
+body {
+  background: #f6f6f8;
+}
+.otherInfo {
+  width: 1203px;
+  height: 165px;
+  margin: 0 auto;
+  background: #fff;
+  box-shadow: -327px 0 0 #ffffff, 350px 0 0 #ffffff;
+}
+.otherInfo > dl {
+  float: left;
+  padding-left: 10px;
+  padding-top: 10px;
+  box-sizing: border-box;
+}
+.otherInfo > dl > dt {
+  height: 50px;
+  font: 12px / 50px '微软雅黑';
+}
+.otherInfo > dl > dt a {
+  color: #414a60;
+}
+.otherInfo > dl > dd {
+  height: 23px;
+  font: 12px / 23px '微软雅黑';
+  color: #8d92a1;
+}
+.otherInfo > dl > dd > a {
+  color: #8d92a1;
+}
+.otherInfo > dl > dd > a:hover {
+  color: #55cbc4;
+}
+.otherInfo > dl > dd > tel:hover {
+  cursor: pointer;
+}
+.otherInfo > dl:nth-of-type(2) {
+  margin-left: 100px;
+}
+.otherInfo > dl:nth-of-type(3) {
+  margin-left: 80px;
+}
+.otherInfo > dl:nth-of-type(4) {
+  margin-left: 315px;
+}

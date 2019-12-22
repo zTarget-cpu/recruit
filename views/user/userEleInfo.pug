@@ -1,0 +1,30 @@
+tbody
+    tr
+        td 账号:
+        td
+            p.user #{dataArr[0].username}
+    tr
+        td 学校:
+        td
+            p.school #{dataArr[0].school}
+    -if(dataArr[0].userstatus == 1)
+        tr
+            td 姓名:
+            td
+                p.realname  #{dataArr[0].realname}
+        tr
+            td 年龄:
+            td
+                p.age  #{dataArr[0].age}
+        tr
+            td 地址:
+            td
+                p.address  #{dataArr[0].address}
+        tr
+            td 学科:
+            td
+                p.subject  #{dataArr[0].subject}
+        tr
+            td 邮箱:
+            td
+                p.email  #{dataArr[0].email}

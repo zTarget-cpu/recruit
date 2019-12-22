@@ -1,0 +1,98 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='UTF-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    meta(http-equiv='X-UA-Compatible', content='ie=edge')
+    title 企业信息
+    link(href='css/header.css', rel='stylesheet')
+    link(href='css/info.css', rel='stylesheet')
+    link(href='css/reset.css', rel='stylesheet')
+    link(href='css/userInfo.css', rel='stylesheet')
+  body
+    // 顶部
+    header.topHeader
+      h3.logoImg IT招聘
+      //- ul.listHeader
+      //-   li
+      //-     a(href='/user/index') 账户信息
+      //-   li
+      //-     a(href='/user/showEnterPoster') 企业信息
+      //-   li
+      //-     a(href='/user/showPoster') 企业邮箱
+      ul.listHeaderSpec
+        li
+          a(href='/user/showLogin') 我要找工作
+        li
+          a(href='/user/showLogin') 我要招聘
+      a.register(href='/user/showLogon') 注册
+      a.login(href='/user/showLogin') 登录
+      p.userName
+        | 欢迎! 
+        span.userNameSpec
+      ul.userPower
+        li
+          a(href='/user/index' class="exitSpec") 退出登录
+    // 内容显示
+    section.content.clearfix
+      ul
+        li 
+          a(href='javascript:;') 企业信息
+        li
+          a(class='specList',href='javascript:;') 企业设置
+        li
+          a(href='javascript:;') 企业邮箱
+        li
+          a(href='javascript:;') 发布招聘
+        li.specListtoggle
+          a(href='javascript:;') 招聘管理
+      .pel
+        section.setUserWrap
+          section.yes 成功
+          table.enterset
+            tbody
+              tr
+                td 账号
+                td
+                  p.user 
+              tr
+                td 公司
+                td
+                  p.enterprice
+          table.entersetinfo
+          table.enterEmail
+          table.pulish
+            tbody
+              tr
+                td
+                  p#pulish 权限不足，请到'企业设置'完成认证!!!!
+          table.manageInfo
+    // 其他信息
+    nav.otherInfo
+      dl
+        dt 企业服务
+        dd
+          a(href='/user/showEnterPoster') 职位搜索
+        dd
+          a(href='/user/showAdvert') 新闻资讯
+      dl
+        dt 使用与帮助
+        dd 用户协议与隐私政策
+        dd 防骗指南
+        dd 使用帮助
+      dl
+        dt 联系IT招聘
+        dd 厦门**网络技术有限公司
+        dd 公司地址:厦门市************
+        dd
+          | 联系电话：
+          tel 123-1234567
+        dd 违法和不良信息举报:123456789@123.com
+      dl
+        dt IT招聘
+        dd 企业服务热线和举报投诉 123 123 1234
+        dd 工作日 8:00 - 22:00
+        dd 休息日 9:30 - 18:30
+    script(src='js/userInfo.js')
+    script(src='js/selectUser.js')
+    script(src='js/axios.js')

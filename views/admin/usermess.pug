@@ -1,0 +1,10 @@
+table
+    tbody
+        each dataval in dataArr
+            tr
+                td(pid=dataval.id).showUserDetail 用户名: #{dataval.username}
+                td 学校: #{dataval.school}
+                td 
+                    a(href="javascript:;") 删除
+                
+        

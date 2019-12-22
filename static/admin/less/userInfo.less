@@ -1,0 +1,171 @@
+@import "element";
+.content{
+    width: 1203px;
+    margin: 20px auto;
+    background: #fff;
+    >ul{
+        background: @bgColor;
+        float: left;
+        >li{
+            width: 222px;
+            height: 90px;
+            border-right: 2px solid #eef0f5;
+            .font(18px, 90px);
+            text-align: center;
+            color: #9ca1ad;
+            a{
+                color: #9ca1ad;
+            }
+        }
+    }
+}
+.pel{
+    width: 80px;
+    height: 1000px;
+    float: left;
+    >section:nth-of-type(1){
+        table{
+            margin-top: 50px;
+            width: 980px;
+        }
+        .showEnterDetail:hover,.showAdInfoDetail:hover,.showUserDetail:hover{
+            cursor: pointer;
+        }
+        table.adManage{
+            tr:nth-of-type(1){
+                p{
+                    width: 150px;
+                }
+            }
+            td:nth-of-type(2){
+                p{
+                    width: 400px;
+                }
+            }
+        }
+        td{
+            vertical-align: top;
+        }
+        tr td:nth-of-type(1),p{
+            color: #495060;
+            .font(13px, 50px);
+            padding-left: 82px;
+            box-sizing: border-box;
+            width: 235px;
+        }
+        tr input{
+            width: 300px;
+            height: 34px;
+            border: 1px solid #e3e7ed;
+            padding-left: 10px;
+            box-sizing: border-box;
+            color:#495060 ;
+            &::-webkit-input-placeholder{
+                color: #9ca1ad;
+                .font(12px, 32px)
+            }
+        }
+        tr textarea{
+            width: 300px;
+            height: 156px;
+            border: 1px solid #e3e7ed;
+            background: transparent;
+            padding-left: 10px;
+            .font(13px,30px);
+            box-sizing: border-box;
+            color: #495060;
+            &::-webkit-input-placeholder{
+                color: #9ca1ad;
+                .font(12px, 30px)
+            }
+        }
+        tr input[type=submit]{
+            color: #fff;
+            background: @color;
+            margin-top: 100px;
+            position: relative;
+            left: 110px;
+        }
+        tr input[type=submit]:hover{
+            cursor: pointer;
+        }
+        tr td:nth-of-type(2){
+            .font(13px, 50px);
+            color: #495060;
+            vertical-align: middle;
+            >input,textarea{
+                margin-top: 10px;;
+            }
+            p{
+                padding-left: 0;
+            }
+        }
+        tr td:nth-of-type(3) a{
+            .font(13px, 50px);
+            color: #495060;
+            margin-left: 90px;
+            color: #ff552e;
+            p{
+                padding-left: 0;
+            }
+        }
+        tr:last-child{
+            margin-top: 20px;
+            span{
+                .font(13px, 50px);
+                color: #495060;
+            }
+            span:hover{
+                cursor: pointer;
+            }
+        }
+    }
+}
+.submit{
+    a{
+        color: #fff;
+        width: 130px;
+        height: 34px;
+        text-align: center;
+        .font(12px, 34px);
+        background: @color;
+        display: block;
+    }
+}
+.userEmailStyle{
+    width: 800px;
+    li{
+        border-bottom: 5px solid @bgColor;
+    }
+    li:hover{
+        cursor: pointer;
+        >p{
+            color: @color;
+        }
+    }
+    p{
+        width: 500px !important;
+        overflow: hidden;
+        height: 50px;
+        >span{
+            margin-left: 100px;
+        }
+    }
+}
+table.userManage,.enteManage,.adPulish,.adManage{
+    display: none;
+}
+.yes{
+    z-index: 4;
+    width: 100px;
+    height: 100px;
+    position: fixed;
+    left: 50%;
+    top: 35%;
+    transform: translate(-50%,-50%);
+    background: rgba(0, 0, 0, 0.2);
+    font: 18px / 100px '微软雅黑';
+    color: #fff;
+    text-align: center;
+    display: none;
+}

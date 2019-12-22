@@ -1,0 +1,59 @@
+@import "element";
+// 导航
+.navi{
+    width: 1203px;
+    height: 100px;
+    margin: 0 auto;
+    box-shadow: -400px 0 0 #fff, 350px 0 0 #fff;
+    background: #fff;
+    padding-top: 35px;
+    box-sizing: border-box;
+    >dl{
+        height: 46px;
+        .font(12px, 46px);
+        margin-left: 30px;
+        a:hover{
+            color: @color;
+        }
+        >dt{
+            float: left;
+            a{
+                padding-left: 7px;
+                color: @fontC; 
+            }
+        };
+        >dd{
+            float: left;
+            a{
+                padding:  0 20px;
+                color: @fontD;
+            }
+        }
+    };
+}
+// 公司介绍 简单
+.enterpriceCotent{
+    height: 540px;
+    width: 1203px;
+    margin: 0 auto;
+    overflow: hidden;
+    .font(15px,50px);
+    color: #585858;
+    >div{
+        width: 401px;
+        height: 175px;
+        background: #fff;
+        border: 10px solid #f6f6f8;
+        padding-top: 5px;
+        padding: 0 25px;
+        box-sizing: border-box;
+        float: left;
+    }
+}
+.listHeader{
+    >li:nth-of-type(3){
+        >a{
+            color: #00d7bc;
+        }
+    }
+}

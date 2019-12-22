@@ -1,0 +1,126 @@
+body {
+  background: #f6f6f8;
+}
+body {
+  width: 100vw;
+  overflow-x: hidden;
+}
+.topHeader {
+  width: 1203px;
+  height: 49px;
+  margin: 0 auto;
+  position: relative;
+  background: #202329;
+  -webkit-box-shadow: -600px 0 0 #202329, 600px 0 0 #202329;
+          box-shadow: -600px 0 0 #202329, 600px 0 0 #202329;
+}
+.logoImg {
+  width: 133px;
+  height: 49px;
+  font: 20px / 49px '微软雅黑';
+  color: #5dd5c8;
+  text-align: center;
+  cursor: pointer;
+}
+.listHeader {
+  width: 208px;
+  height: 49px;
+  font: 14px / 49px '微软雅黑';
+  position: absolute;
+  left: 133px;
+  top: 0px;
+}
+.listHeader > li {
+  width: 25%;
+  height: 49px;
+  float: left;
+}
+.listHeader > li > a {
+  color: #fff;
+}
+.listHeader > li > a:hover {
+  color: #00d7bc;
+}
+.listHeaderSpec {
+  width: 162px;
+  height: 9px;
+  font: 12px / 49px '微软雅黑';
+  position: absolute;
+  left: 854px;
+  top: 0px;
+}
+.listHeaderSpec > li:nth-of-type(1) > a {
+  color: #00d7bc;
+}
+.listHeaderSpec > li {
+  width: 50%;
+  height: 49px;
+  float: left;
+}
+.listHeaderSpec > li > a {
+  color: #fff;
+}
+.listHeaderSpec > li > a:hover {
+  color: #00d7bc;
+}
+.register,
+.login {
+  color: #fff;
+  position: absolute;
+  left: 1010px;
+  padding-left: 11px;
+  padding-right: 11px;
+  top: 12px;
+  border: 1px solid #00d7bc;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-align: center;
+  font: 12px / 25px '微软雅黑';
+  border-radius: 10px;
+}
+.userName {
+  color: #fff;
+  position: absolute;
+  left: 1010px;
+  padding-left: 11px;
+  padding-right: 11px;
+  top: 0px;
+  text-align: center;
+  font: 16px / 49px '微软雅黑';
+  display: none;
+}
+.login {
+  left: 1084px;
+}
+.userPower {
+  display: none;
+  width: 257px;
+  margin-left: 1014px;
+}
+.userPower > li {
+  width: 257px;
+  height: 50px;
+  position: relative;
+}
+.userPower > li a {
+  font: 13px / 37px '微软雅黑';
+  color: #565e71;
+  position: absolute;
+  width: 125px;
+  height: 50px;
+  text-align: center;
+  left: 0;
+  z-index: 1;
+  background: #fff;
+}
+.userPower > li a span {
+  color: #9fa3b0;
+  position: absolute;
+  left: 36px;
+  top: 30px;
+  font: 13px / 13px '微软雅黑';
+}
+.userPower > li:hover a {
+  background: #f6f6f8;
+  color: #5dd5c8;
+}

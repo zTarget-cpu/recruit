@@ -1,0 +1,293 @@
+body {
+  background: #f6f6f8;
+}
+.navi {
+  width: 1203px;
+  height: 120px;
+  margin: 0 auto;
+  box-shadow: -400px 0 0 #5dd5c8, 350px 0 0 #5dd5c8;
+  background: url(../img/navi.jpg);
+  position: relative;
+}
+.navi > h3 {
+  font: 60px / 120px '圆体';
+  color: #fff;
+  position: absolute;
+  left: 200px;
+  font-weight: bolder;
+}
+.navi > h3 > span {
+  font: 40px / 120px '微软雅黑';
+  font-weight: bolder;
+  margin-left: 30px;
+}
+.listHeader > li:nth-of-type(1) > a {
+  color: #00d7bc;
+}
+.seachNavi {
+  width: 1203px;
+  height: 110px;
+  margin: 0 auto;
+  padding: 16px 133px 0px;
+  box-sizing: border-box;
+}
+.seachNavi > div:nth-of-type(1) {
+  height: 58px;
+  width: 100%;
+  box-sizing: border-box;
+  position: relative;
+}
+.seachNavi > div:nth-of-type(1) > input {
+  width: 672px;
+  height: 50px;
+  border: 1px solid #e8e8e8;
+  border-right: none;
+  padding-left: 27px;
+  box-sizing: border-box;
+  color: #634a60;
+  font: 16px / 50px '微软雅黑';
+}
+.seachNavi > div:nth-of-type(1) > input::-webkit-input-placeholder {
+  font: 16px / 50px '微软雅黑';
+  color: #9fabca;
+}
+.seachNavi > div:nth-of-type(1) a {
+  width: 140px;
+  height: 50px;
+  position: absolute;
+  color: #fff;
+  font: 16px / 50px '微软雅黑';
+  text-align: center;
+  background: #55cbc4;
+  left: 672px;
+  top: 0px;
+}
+.seachNavi > dl > dt {
+  color: #b4aac8;
+  font: 12px / 36px '微软雅黑';
+  float: left;
+}
+.seachNavi > dl > dd {
+  font: 12px / 36px '微软雅黑';
+  float: left;
+  padding: 0 13px;
+}
+.seachNavi > dl > dd > a {
+  color: #55cbc4;
+}
+.userContent {
+  width: 1203px;
+  height: 296px;
+  margin: 0 auto;
+}
+.userList {
+  width: 384px;
+  height: 296px;
+  background: #fff;
+  float: left;
+  position: relative;
+}
+.userList > a:nth-of-type(1) {
+  color: #55cbc4;
+  margin-left: 20px;
+  font: 12px / 44px '微软雅黑';
+  font-weight: bolder;
+}
+.userList a {
+  color: #8d92a1;
+}
+.userList > dl.lastDl {
+  border-bottom: 1px solid #ecedef;
+}
+.userList > dl {
+  height: 39px;
+  width: 100%;
+  margin-bottom: 2px;
+  position: relative;
+}
+.userList > dl:hover {
+  background: #55cbc4;
+}
+.userList > dl:hover a {
+  color: white;
+}
+.userList > dl > dt {
+  font: 13px / 39px '微软雅黑';
+  padding: 0 8px 0 20px;
+  color: #6a4a60;
+  float: left;
+  font-weight: bolder;
+}
+.userList > dl > dd.Spec {
+  padding: 0 18px 0 42px;
+}
+.userList > dl > dd {
+  font: 12px / 39px '微软雅黑';
+  color: #7968a4;
+  padding: 0 18px;
+  float: left;
+}
+.userList > dl::after {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  border: 1px solid #dddfe4;
+  box-sizing: border-box;
+  border-top: none;
+  border-left: none;
+  left: 355px;
+  top: 15px;
+  transform: rotate(-45deg);
+}
+.advert {
+  width: 784px;
+  height: 296px;
+  float: left;
+  box-sizing: border-box;
+  margin-left: 16px;
+}
+.advert table td {
+  border: 5px solid #fff;
+}
+.advert table img {
+  width: 338px;
+  height: 115px;
+  opacity: 0.8;
+}
+.advert table img:hover {
+  transition: .5s;
+  opacity: 1;
+}
+.enterpriceContent {
+  width: 1203px;
+  height: 310px;
+  margin: 0 auto;
+  margin-top: 30px;
+}
+.enterpriceContent > div:nth-of-type(1) {
+  height: 46px;
+  width: 100%;
+}
+.enterpriceContent > div::nth-of-type(2) {
+  width: 1200px;
+  height: 160px;
+}
+.enterpriceContent > a {
+  position: absolute;
+  left: 50%;
+  width: 384px;
+  height: 34px;
+  border: 1px solid #55cbc4;
+  text-align: center;
+  margin-top: 20px;
+  font: 13px / 34px '微软雅黑';
+  transform: translate(-50%);
+  color: #55cbc4;
+}
+.enterpriceContent > a:hover {
+  background: #55cbc4;
+  color: #fff;
+}
+.enterpriceList {
+  width: 100%;
+  height: 46px;
+}
+.enterpriceList > li:nth-of-type(1) a {
+  color: #55cbc4;
+  padding-left: 11px;
+}
+.enterpriceList > li {
+  height: 46px;
+  float: left;
+}
+.enterpriceList > li > a {
+  color: #8d92a1;
+  font: 12px / 46px '微软雅黑';
+  padding-left: 40px;
+}
+.enterpriceShow {
+  width: 1200px;
+  height: 160px;
+}
+.enterpriceShow td {
+  width: 355px;
+  height: 175px;
+  background: #fff;
+  border: 10px solid #f6f6f8;
+  vertical-align: top;
+  padding-top: 5px;
+  padding: 0 25px;
+  box-sizing: border-box;
+}
+.enterpriceShow td:hover {
+  cursor: pointer;
+}
+.enterpriceShow td:hover a {
+  color: #55cbc4;
+}
+.innerUl {
+  display: none;
+  position: absolute;
+  left: 384px;
+  width: 440px;
+  background: #fff;
+  z-index: 1;
+}
+.innerUl li:nth-of-type(1) h3 {
+  font: 14px / 40px '微软雅黑';
+  color: #61687c;
+  padding-left: 38px;
+  box-sizing: border-box;
+  font-weight: bolder;
+}
+.innerUl .otherUl {
+  float: left;
+  position: relative;
+  left: 110px;
+  width: 330px;
+}
+.innerUl .otherUl li {
+  font: 12px / 40px '微软雅黑';
+  float: left;
+}
+.innerUl .otherUl li a {
+  color: #61687c;
+  padding: 0 20px;
+}
+.innerUl .otherUl li a:hover {
+  color: #55cbc4;
+}
+.userPower {
+  display: none;
+  width: 257px;
+  margin-left: 1014px;
+}
+.userPower > li {
+  width: 257px;
+  height: 50px;
+  position: relative;
+}
+.userPower > li a {
+  font: 13px / 37px '微软雅黑';
+  color: #565e71;
+  position: absolute;
+  width: 125px;
+  height: 50px;
+  text-align: center;
+  left: 0;
+  z-index: 1;
+  background: #fff;
+}
+.userPower > li a span {
+  color: #9fa3b0;
+  position: absolute;
+  left: 36px;
+  top: 30px;
+  font: 13px / 13px '微软雅黑';
+}
+.userPower > li:hover a {
+  background: #f6f6f8;
+  color: #5dd5c8;
+}

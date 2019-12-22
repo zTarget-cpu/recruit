@@ -1,0 +1,10 @@
+table
+  tbody
+    each val in dataArr
+        tr
+            td
+                p 标题:#{val.recruititle}
+            td
+                p(class='findDetail',id=val.id) 点击查看详情！！！
+            td 
+                a(href="javascript:;",id=val.id) 删除

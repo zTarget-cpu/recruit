@@ -1,0 +1,304 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='UTF-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    meta(http-equiv='X-UA-Compatible', content='ie=edge')
+    title 首页
+    link(href='css/Dl.css', rel='stylesheet')
+    link(href='css/header.css', rel='stylesheet')
+    link(href='css/info.css', rel='stylesheet')
+    link(href='css/index.css', rel='stylesheet')
+    link(href='css/reset.css', rel='stylesheet')
+  body
+    // 顶部
+    header.topHeader
+      h3.logoImg IT招聘
+      ul.listHeader
+        li
+          a(href='/user/index') 首页
+        li
+          a(href='/user/showEnterPoster') 职位
+        li
+          a(href='/user/showPoster') 公司
+        li
+          a(href='/user/showAdvert') 资讯
+      ul.listHeaderSpec.clearfix
+        li
+          a(href='/user/showLogin') 我要找工作
+        li
+          a(href='/enterprice/index') 我要招聘
+      a.register(href='/user/showLogon') 注册
+      a.login(href='/user/showLogin') 登录
+      p.userName
+        | 欢迎! 
+        span.userNameSpec
+      ul.userPower
+        li
+          a(href='/user/showuserInfo') 个人中心
+           span 编辑在线简历
+        li
+          a(href='/user/index' class="exitSpec") 退出登录
+
+    // 导航
+    section.navi
+      h3
+        | IT招聘
+        span 上岗快
+    // 搜索
+    article.seachNavi
+      div
+        input(name='seachWork',class="seachWork", type='text', placeholder='搜索职位,公司')
+        a(href='javascript:;',class="search") 搜索
+      dl
+        dt 热门职位:
+        dd
+          a(href='/user/showEnterPoster?keyWork=Java') Java
+        dd
+          a(href='/user/showEnterPoster?keyWork=C#') C#
+        dd
+          a(href='/user/showEnterPoster?keyWork=PHP') PHP
+        dd
+          a(href='/user/showEnterPoster?keyWork=HTML5') HTML5
+        dd
+          a(href='/user/showEnterPoster?keyWork=C') C
+        dd
+          a(href='/user/showEnterPoster?keyWork=.Net') .Net
+    // 用户求职导航栏
+    section.userContent
+      .userList
+        dl
+          // 1
+          dt 后端开发
+          dd
+            a(href='/user/showEnterPoster?keyWork=Java') Java
+          dd
+            a(href='/user/showEnterPoster?keyWork=C#') C#
+          dd
+            a(href='/user/showEnterPoster?keyWork=PHP') PHP
+          ul.innerUl.clearfix
+            li
+              h3 后端开发
+            li
+              ul.otherUl.clearfix
+                li
+                  a(href='/user/showEnterPoster?keyWork=JAVA') Java
+                li
+                  a(href='/user/showEnterPoster?keyWork=后端开发C#') C#
+                li
+                  a(href='/user/showEnterPoster?keyWork=PHP') PHP
+                li
+                  a(href='/user/showEnterPoster?keyWork=C') C
+                li
+                  a(href='/user/showEnterPoster?keyWork=C++') C++
+                li
+                  a(href='/user/showEnterPoster?keyWork=.NET') .NET
+                li
+                  a(href='/user/showEnterPoster?keyWork=Hadoop') Hadoop
+                li
+                  a(href='/user/showEnterPoster?keyWork=Python') Python
+                li
+                  a(href='/user/showEnterPoster?keyWork=VB') VB
+                li
+                  a(href='/user/showEnterPoster?keyWork=Pler') Pler
+        dl
+          // 2
+          dt 移动开发
+          dd
+            a(href='/user/showEnterPoster?keyWork=HTML5') HTML5
+          dd
+            a(href='/user/showEnterPoster?keyWork=iOS') iOS
+          dd
+            a(href='/user/showEnterPoster?keyWork=Android') Android
+          ul.innerUl.clearfix
+            li
+              h3 移动开发
+            li
+              ul.otherUl.clearfix
+                li
+                  a(href='/user/showEnterPoster?keyWork=HTML5') HTML5
+                li
+                  a(href='/user/showEnterPoster?keyWork=IOS') IOS
+                li
+                  a(href='/user/showEnterPoster?keyWork=Android') Android
+                li
+                  a(href='/user/showEnterPoster?keyWork=WP') WP
+                li
+                  a(href='/user/showEnterPoster?keyWork=移动web前端') 移动web前端
+                li
+                  a(href='/user/showEnterPoster?keyWork=Flash开发') Flash开发
+                li
+                  a(href='/user/showEnterPoster?keyWork=JavaScript') JavaScript
+                li
+                  a(href='/user/showEnterPoster?keyWork=U3D') U3D
+        dl
+          // 3
+          dt 测试
+          dd.Spec
+            a(href='/user/showEnterPoster?keyWork=测试工程师') 测试工程师
+          dd
+            a(href='/user/showEnterPoster?keyWork=自动化测试') 自动化测试
+          dd
+            a(href='/user/showEnterPoster?keyWork=功能测试') 功能测试
+          ul.innerUl.clearfix
+            li
+              h3 测试
+            li
+              ul.otherUl.clearfix
+                li
+                  a(href='/user/showEnterPoster?keyWork=自动化测试') 自动化测试
+                li
+                  a(href='/user/showEnterPoster?keyWork=功能测试') 功能测试
+                li
+                  a(href='/user/showEnterPoster?keyWork=性能测试') 性能测试
+                li
+                  a(href='/user/showEnterPoster?keyWork=测试开发') 测试开发
+                li
+                  a(href='/user/showEnterPoster?keyWork=移动端测试') 移动端测试
+                li
+                  a(href='/user/showEnterPoster?keyWork=硬件测试') 硬件测试
+        dl
+          // 4
+          dt 运维
+          dd.Spec
+            a(href='/user/showEnterPoster?keyWork=网络工程师') 网络工程师
+          dd
+            a(href='/user/showEnterPoster?keyWork=运维工程师') 运维工程师
+          dd
+            a(href='/user/showEnterPoster?keyWork=系统工程师') 系统工程师
+          ul.innerUl.clearfix
+            li
+              h3 运维
+            li
+              ul.otherUl.clearfix
+                li
+                  a(href='/user/showEnterPoster?keyWork=运维工程师') 运维工程师
+                li
+                  a(href='/user/showEnterPoster?keyWork=系统工程师') 系统工程师
+                li
+                  a(href='/user/showEnterPoster?keyWork=网络工程师') 网络工程师
+                li
+                  a(href='/user/showEnterPoster?keyWork=系统工程师') 系统工程师
+                li
+                  a(href='/user/showEnterPoster?keyWork=系统管理员') 系统管理员
+                li
+                  a(href='/user/showEnterPoster?keyWork=') 系统安全
+        dl
+          // 5
+          dt 数据
+          dd.Spec
+            a(href='/user/showEnterPoster?keyWork=数据仓库') 数据仓库
+          dd
+            a(href='/user/showEnterPoster?keyWork=数据开发') 数据开发
+          dd
+            a(href='/user/showEnterPoster?keyWork=数据挖掘') 数据挖掘
+          ul.innerUl.clearfix
+            li
+              h3 数据
+            li
+              ul.otherUl.clearfix
+                li
+                  a(href='/user/showEnterPoster?keyWork=数据仓库') 数据仓库
+                li
+                  a(href='/user/showEnterPoster?keyWork=数据开发') 数据开发
+                li
+                  a(href='/user/showEnterPoster?keyWork=数据挖掘') 数据挖掘
+                li
+                  a(href='/user/showEnterPoster?keyWork=数据分析师') 数据分析师
+                li
+                  a(href='/user/showEnterPoster?keyWork=数据架构师') 数据架构师
+                li
+                  a(href='/user/showEnterPoster?keyWork=算法研究员') 算法研究员
+        dl.lastDl
+          // 6
+          dt 项目管理
+          dd
+            a(href='/user/showEnterPoster?keyWork=项目经理') 项目经理
+          dd
+            a(href='/user/showEnterPoster?keyWork=项目主管') 项目主管
+          dd
+            a(href='/user/showEnterPoster?keyWork=项目助理') 项目助理
+          ul.innerUl.clearfix
+            li
+              h3 项目管理
+            li
+              ul.otherUl.clearfix
+                li
+                  a(href='/user/showEnterPoster?keyWork=项目经理') 项目经理
+                li
+                  a(href='/user/showEnterPoster?keyWork=项目主管') 项目主管
+                li
+                  a(href='/user/showEnterPoster?keyWork=项目助理') 项目助理
+                li
+                  a(href='/user/showEnterPoster?keyWork=项目专员') 项目专员
+                li
+                  a(href='/user/showEnterPoster?keyWork=实施顾问') 实施顾问
+                li
+                  a(href='/user/showEnterPoster?keyWork=实施工程师') 实施工程师
+        a(href='/user/showEnterPoster') 显示全部职位
+      .advert
+        table
+          tbody
+            tr
+              td
+                a(href='/user/showenterpriceDetail?name=京东集团&&keyWord=java')
+                  img(alt='广告', src='img/ad1.png')
+              td
+                a(href='/user/showenterpriceDetail?name=北大方正电子&&keyWord=java')
+                  img(alt='广告', src='img/ad2.png')
+            tr
+              td
+                a(href='/user/showenterpriceDetail?name=蚂蚁金服&&keyWord=java')
+                  img(alt='广告', src='img/ad3.png')
+              td
+                a(href='/user/showenterpriceDetail?name=美团网&&keyWord=java')
+                  img(alt='广告', src='img/ad4.png')
+    // 热门公司
+    section.enterpriceContent
+      div
+        ul.enterpriceList
+          li
+            a(href='javascript:;') 热门职位
+      div
+        table.enterpriceShow.enterpriceDL
+          tbody
+            tr
+              each val in dataVal
+                td
+                  dl
+                    dt
+                      a(href='/user/showenterpriceDetail?name='+val.enterpricename+'&&keyWord='+val.recruititle) #{val.enterpricename}
+                    dd
+                      span #{val.recruititle} | #{val.boos}
+                    dd
+                      span 公司人数:#{val.enterpriceSize}
+                      span boss在线
+      a(href="/user/showPoster") 查看更多
+    // 其他信息
+    nav.otherInfo
+      dl
+        dt 企业服务
+        dd
+          a(href='/user/showEnterPoster') 职位搜索
+        dd
+          a(href='/user/showAdvert') 新闻资讯
+      dl
+        dt 使用与帮助
+        dd 用户协议与隐私政策
+        dd 防骗指南
+        dd 使用帮助
+      dl
+        dt 联系IT招聘
+        dd 厦门**网络技术有限公司
+        dd 公司地址:厦门市************
+        dd
+          | 联系电话：
+          tel 123-1234567
+        dd 违法和不良信息举报:123456789@123.com
+      dl
+        dt IT招聘
+        dd 企业服务热线和举报投诉 123 123 1234
+        dd 工作日 8:00 - 22:00
+        dd 休息日 9:30 - 18:30
+    script(src='js/index.js')
+    script(src='js/selectUser.js')

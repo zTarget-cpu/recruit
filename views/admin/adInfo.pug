@@ -1,0 +1,8 @@
+table
+    tbody
+        each dataval in dataArr
+            tr
+                td(class='showAdInfoDetail',pid=dataval.id) 标题: #{dataval.adTitle.substr(0,5)+'..'}
+                td 时间: #{dataval.adtime}
+                td 
+                    a(href="javascript:;",class=dataval.id) 删除

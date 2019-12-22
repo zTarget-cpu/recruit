@@ -1,0 +1,26 @@
+tbody
+    tr
+        td 账号:
+        td
+            p.user 
+    tr
+        td 公司:
+        td
+            p.enterprice 
+    -if(enterstatus==1)
+        tr
+            td 老板:
+            td
+                p.boos #{dataArr[0].boos}
+        tr
+            td 地址:
+            td
+                p.address #{dataArr[0].address}
+        tr
+            td 福利:
+            td
+                p.enwelfare #{dataArr[0].enwelfare}
+        tr
+            td 规模:
+            td
+                p.enterpriceSize #{dataArr[0].enterpriceSize}

@@ -1,0 +1,15 @@
+table
+  tbody
+    each val in dataArr
+        tr
+            td(pid=val.pid).ShowUserInfo
+                | 申请用户:#{val.username}
+            td 
+                span(class='recruitTitle') 申请职位:#{val.recruittile}
+                span(class='loadResume',initId=val.id,path=val.resume) 点击下载简历
+            td 
+                a(href="javascript:;",username=val.username,specTitle=val.recruittile) 回复
+                a(href="javascript:;",pid=val.id) 删除
+
+
+//- ,initId=val.id  ,pid=val.pid

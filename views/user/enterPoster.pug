@@ -1,0 +1,130 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='UTF-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    meta(http-equiv='X-UA-Compatible', content='ie=edge')
+    title 招聘
+    link(href='css/Dl.css', rel='stylesheet')
+    link(href='css/header.css', rel='stylesheet')
+    link(href='css/page.css', rel='stylesheet')
+    link(href='css/info.css', rel='stylesheet')
+    link(href='css/reset.css', rel='stylesheet')
+    link(href='css/enterPoster.css', rel='stylesheet')
+  body
+    // 顶部
+    header.topHeader
+      h3.logoImg IT招聘
+      ul.listHeader
+        li
+          a(href='/user/index') 首页
+        li
+          a(href='/user/showEnterPoster') 职位
+        li
+          a(href='/user/showPoster') 公司
+        li
+          a(href='/user/showAdvert') 资讯
+      ul.listHeaderSpec
+        li
+          a(href='/user/showLogin') 我要找工作
+        li
+          a(href='/user/showLogin') 我要招聘
+      a.register(href='/user/showLogon') 注册
+      a.login(href='/user/showLogin') 登录
+      p.userName
+        | 欢迎! 
+        span.userNameSpec
+      ul.userPower
+        li
+          a(href='/user/showuserInfo') 个人中心
+           span 编辑在线简历
+        li
+          a(href='/user/index' class="exitSpec") 退出登录
+    // 导航
+    nav.navi
+      ul.naviLIst
+        li
+          span.schoolqualify 学历要求
+          dl
+            dd
+              a(href='javascript:;') 初中以下
+            dd
+              a(href='javascript:;') 中专
+            dd
+              a(href='javascript:;') 大专
+            dd
+              a(href='javascript:;') 本科
+            dd
+              a(href='javascript:;') 硕士以上
+        li
+          span.salary 薪资要求
+          dl
+            dd
+              a(href='javascript:;') 3K以下
+            dd
+              a(href='javascript:;') 3K-5K
+            dd
+              a(href='javascript:;') 5K-10K
+            dd
+              a(href='javascript:;') 10K-15K
+            dd
+              a(href='javascript:;') 15K以上
+    // 招聘信息
+    section.posterContent
+      | #{newHtml}
+      each val in dataVal
+        .posterCTN
+          dl
+            dt
+              span #{val.recruititle}
+              span #{val.salary}
+            dd
+              span #{val.address}
+              span #{val.schoolqualify}
+          dl
+            dt 
+              a(href='/user/showenterpriceDetail?name='+val.enterpricename+'&&keyWord='+val.recruititle) #{val.enterpricename}
+            dd
+              span 互联网
+              span 规模:#{val.enterpriceSize}
+          p 先生 | 女士
+    // 分页
+    section.changePage
+      -if(!sortInfo)
+        -if(pagelen != 1)
+          -for(var i=1;i<=pagelen;i++)
+            a(href='/user/showEnterPoster?page='+i+`${keyWork==''?'':'&keyWork=Java'}`) #{i}
+      -else
+        -if(pagelen != 1)
+          -for(var i=1;i<=pagelen;i++)
+            a(href='javascript:;') #{i}
+    // 其他信息
+    nav.otherInfo
+      dl
+        dt 企业服务
+        dd
+          a(href='/user/showEnterPoster') 职位搜索
+        dd
+          a(href='/user/showAdvert') 新闻资讯
+      dl
+        dt 使用与帮助
+        dd 用户协议与隐私政策
+        dd 防骗指南
+        dd 使用帮助
+      dl
+        dt 联系IT招聘
+        dd 厦门**网络技术有限公司
+        dd 公司地址:厦门市************
+        dd
+          | 联系电话：
+          tel 123-1234567
+        dd 违法和不良信息举报:123456789@123.com
+      dl
+        dt IT招聘
+        dd 企业服务热线和举报投诉 123 123 1234
+        dd 工作日 8:00 - 22:00
+        dd 休息日 9:30 - 18:30
+    script(src='js/enterPoster.js')
+    script(src='js/selectUser.js')
+    script(src='js/axios.js')
+  

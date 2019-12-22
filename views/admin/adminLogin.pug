@@ -1,0 +1,19 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='UTF-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    meta(http-equiv='X-UA-Compatible', content='ie=edge')
+    title 登录
+    link(href='css/login.css', rel='stylesheet')
+    link(href='css/reset.css', rel='stylesheet')
+  body
+    section.loginContent
+      h3 IT招聘
+      p.clearfix.aSpec
+        a(href='javascript:;') admin登录
+      input.user(name='user', type='text', placeholder='账户名')
+      input.password(name='password', type='password', placeholder='密码')
+      a.login(href='javascript:;') 登录
+    script(src='js/login.js')
+    script(src='js/axios.js')

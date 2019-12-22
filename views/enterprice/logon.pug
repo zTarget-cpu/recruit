@@ -1,0 +1,21 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='UTF-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    meta(http-equiv='X-UA-Compatible', content='ie=edge')
+    title 注册
+    link(href='css/reset.css', rel='stylesheet')
+    link(href='css/logon.css', rel='stylesheet')
+  body
+    section.loginContent
+      h3 企业注册
+      input.user(name='user', type='text', placeholder='账户名')
+      input.password(name='password', type='password', placeholder='设置密码')
+      input.Enterpassword(name='password', type='password', placeholder='确定密码')
+      input.enterprice(name='password', type='text', placeholder='设置公司')
+      a.register(href='javascript:;') 注册
+      p 注册即同意《使用协议&隐私政策》
+    script(src='js/logon.js')
+    script(src='js/axios.js')
+  
